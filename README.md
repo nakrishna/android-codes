@@ -1,3 +1,3 @@
 # android-codes
 
-vacation-planner
+The pizzastore application
