@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/ScrollView01"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+android:scrollbars="none" 
+android:background= "@drawable/untitled2">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="513dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="530dp" >
+
+        <TextView
+            android:id="@+id/finishP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/continuePizza"
+            android:layout_below="@+id/continuePizza"
+            android:layout_marginTop="39dp"
+            android:text="Phone_No" />
+
+        <TextView
+            android:id="@+id/continuePizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vegbtn"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/continuePizza"
+            android:layout_toRightOf="@+id/finishP"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_alignTop="@+id/finishP"
+            android:layout_marginLeft="18dp"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/cheesebtn"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/cheesepizza" />
+
+        <EditText
+            android:id="@+id/count2"
+            android:layout_width="35sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cheesebtn"
+            android:layout_alignRight="@+id/editText1"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/count4"
+            android:layout_width="35sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignLeft="@+id/count2"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/count1"
+            android:layout_width="35sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vegbtn"
+            android:layout_alignLeft="@+id/editText2"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/imageView2"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_alignBaseline="@+id/pepronibtn"
+            android:layout_alignBottom="@+id/pepronibtn"
+            android:layout_toLeftOf="@+id/count2"
+            android:background="@drawable/gardenfrpizza" />
+
+        <Button
+            android:id="@+id/vegbtn"
+            android:name="veggi"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_alignBottom="@+id/cheesebtn"
+            android:layout_alignLeft="@+id/pepronibtn"
+            android:background="@drawable/vegpizza" />
+
+        <Button
+            android:id="@+id/pepronibtn"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/count1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/pepperonipizza" />
+
+        <Button
+            android:id="@+id/dbbtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/count1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="14dp"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/costbtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dbbtn"
+            android:layout_alignBottom="@+id/dbbtn"
+            android:layout_alignLeft="@+id/pepronibtn"
+            android:text="Cost" />
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/pepronibtn"
+             android:layout_below="@+id/pepronibtn"
+             android:layout_marginTop="22dp"
+             android:text="Qty  :" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView1"
+             android:layout_below="@+id/textView1"
+             android:layout_marginTop="16dp"
+             android:text="Total $" />
+
+         <Button
+             android:id="@+id/nextbtn"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/dbbtn"
+             android:layout_alignBottom="@+id/dbbtn"
+             android:layout_toLeftOf="@+id/count4"
+             android:text="Next" />
+
+         <EditText
+             android:id="@+id/editText3"
+             android:layout_width="50sp"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/textView2"
+             android:layout_toRightOf="@+id/costbtn"
+             android:ems="10" >
+
+             <requestFocus />
+         </EditText>
+
+         <EditText
+             android:id="@+id/editText4"
+             android:layout_width="50sp"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/textView2"
+             android:layout_alignBottom="@+id/textView2"
+             android:layout_alignRight="@+id/count1"
+             android:ems="10" />
+
+         <EditText
+             android:id="@+id/count3"
+             android:layout_width="35sp"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/pepronibtn"
+             android:layout_alignRight="@+id/editText4"
+             android:ems="10" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>
